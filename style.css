@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.55;
+}
+
+.container {
+  width: min(1000px, calc(100% - 60px));
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+header {
+  border-bottom: 1px solid #eeeeee;
+  padding: 24px 0;
+  margin-bottom: 55px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-name {
+  color: #222;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* HOME */
+
+.home-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  margin: 15px 0 65px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 55px;
+  align-items: start;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.profile-photo {
+  width: 270px;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+}
+
+.cv-button {
+  display: block;
+  margin-top: 22px;
+  border: 1px solid #777;
+  padding: 11px 15px;
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.cv-button:hover {
+  background: #f5f5f5;
+}
+
+.home-text {
+  font-size: 18px;
+}
+
+.home-text p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+
+/* GENERAL PAGES */
+
+.page-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 500;
+  margin-top: 45px;
+}
+
+.paper-title {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.paper-meta {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.paper-links a {
+  color: #333;
+  margin-right: 18px;
+}
+
+.abstract-heading {
+  margin-top: 38px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.abstract {
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: justify;
+  text-indent: 2em;
+  margin-top: 12px;
+}
+
+.placeholder {
+  font-size: 17px;
+  color: #555;
+}
+
+
+/* THESIS PAGE */
+
+.thesis-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.thesis-title {
+  font-size: 30px;
+  line-height: 1.35;
+  margin-bottom: 15px;
+}
+
+.thesis-author {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.thesis-info {
+  color: #555;
+  margin-top: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+  margin-top: 90px;
+  padding: 25px 0 35px;
+  text-align: center;
+  border-top: 1px solid #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #666;
+}
+
+footer a {
+  color: #555;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .home-title {
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    width: 230px;
+    height: 285px;
+  }
+
+  .cv-button {
+    width: 230px;
+  }
+}
