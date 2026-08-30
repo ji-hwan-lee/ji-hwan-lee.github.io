@@ -2,232 +2,65 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Ji Hwan Lee</title>
 
-  <meta name="description"
-        content="Academic website of Ji Hwan Lee, M.A. student in Political Science and International Affairs at the University of Georgia.">
+  <meta
+    name="description"
+    content="Academic website of Ji Hwan Lee, M.A. student in Political Science and International Affairs at the University of Georgia."
+  >
 
-  <style>
+  <link rel="stylesheet" href="style.css">
 
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-      background: #ffffff;
-      line-height: 1.65;
-    }
-
-    .container {
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 0 30px;
-    }
-
-
-    /* ---------- NAVIGATION ---------- */
-
-    nav {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 22px 0;
-      margin-bottom: 55px;
-    }
-
-    nav .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav-name {
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .nav-links a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: #333;
-      font-size: 15px;
-    }
-
-    .nav-links a:hover {
-      text-decoration: underline;
-    }
-
-
-    /* ---------- INTRO ---------- */
-
-    .intro {
-      display: flex;
-      align-items: center;
-      gap: 50px;
-      margin-bottom: 65px;
-    }
-
-    .profile-photo {
-      width: 190px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 5px;
-      flex-shrink: 0;
-    }
-
-    .intro-text h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 42px;
-      font-weight: 500;
-      margin: 0 0 10px 0;
-    }
-
-    .position {
-      font-size: 18px;
-      margin: 0 0 6px 0;
-    }
-
-    .affiliation {
-      color: #555;
-      margin: 0;
-    }
-
-
-    /* ---------- SECTIONS ---------- */
-
-    section {
-      margin-bottom: 55px;
-    }
-
-    h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 27px;
-      font-weight: 500;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 8px;
-      margin-bottom: 22px;
-    }
-
-    h3 {
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-
-    p {
-      margin-top: 8px;
-    }
-
-    a {
-      color: #315b7d;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .paper-title {
-      font-weight: 600;
-      margin-bottom: 5px;
-    }
-
-    .paper-info {
-      color: #555;
-      margin-top: 0;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin-right: 15px;
-      font-weight: 500;
-    }
-
-
-    /* ---------- FOOTER ---------- */
-
-    footer {
-      border-top: 1px solid #e5e5e5;
-      margin-top: 65px;
-      padding: 25px 0 40px 0;
-      color: #777;
-      font-size: 14px;
-    }
-
-
-    /* ---------- MOBILE ---------- */
-
-    @media (max-width: 700px) {
-
-      .intro {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
-      }
-
-      .profile-photo {
-        width: 160px;
-        height: 190px;
-      }
-
-      .intro-text h1 {
-        font-size: 34px;
-      }
-
-      nav .container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-      }
-
-      .nav-links a {
-        margin-left: 0;
-        margin-right: 20px;
-      }
-
-    }
-
-  </style>
 </head>
 
 
 <body>
 
 
-  <!-- =======================
-       TOP MENU
-       ======================= -->
+<header>
 
-  <nav>
-    <div class="container">
+  <div class="container header-inner">
 
-      <div class="nav-name">
-        Ji Hwan Lee
-      </div>
+    <a class="site-name" href="index.html">
+      Ji Hwan Lee
+    </a>
 
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <nav>
 
-    </div>
-  </nav>
+      <a href="index.html">Home</a>
+
+      <a href="research.html">Research</a>
+
+      <a href="teaching.html">Teaching</a>
+
+      <a href="cv.pdf" target="_blank">CV</a>
+
+    </nav>
+
+  </div>
+
+</header>
 
 
 
-  <main class="container">
+<main class="container">
 
 
-    <!-- =======================
-         PHOTO + NAME
-         ======================= -->
+  <h1 class="home-title">
+    Ji Hwan Lee
+  </h1>
 
-    <div class="intro">
+
+  <div class="home-grid">
+
+
+    <div>
 
       <img
         src="profile.png"
@@ -235,157 +68,64 @@
         class="profile-photo"
       >
 
-      <div class="intro-text">
-
-        <h1>Ji Hwan Lee</h1>
-
-        <p class="position">
-          M.A. Student in Political Science &amp; International Affairs
-        </p>
-
-        <p class="affiliation">
-          Department of International Affairs<br>
-          School of Public and International Affairs<br>
-          University of Georgia
-        </p>
-
-      </div>
+      <a
+        href="cv.pdf"
+        target="_blank"
+        class="cv-button"
+      >
+        Download CV
+      </a>
 
     </div>
 
 
 
-    <!-- =======================
-         ABOUT
-         네 자기소개를 수정할 곳
-         ======================= -->
+    <div class="home-text">
 
-    <section id="about">
-
-      <h2>About</h2>
 
       <p>
-        I am an M.A. student in Political Science &amp; International Affairs
-        in the Department of International Affairs at the University of Georgia.
-        My research interests are in international relations, particularly
-        international order and state strategy.
+        Welcome! I am currently an M.A. student in Political Science
+        &amp; International Affairs in the Department of International
+        Affairs at the University of Georgia.
       </p>
+
 
       <p>
-        I am interested in how international orders shape states' strategic
-        choices and how those choices, in turn, sustain, modify, or challenge
-        international order.
+        I study international relations, with a particular interest
+        in international order and state strategy. I am especially
+        interested in how international orders shape states'
+        strategic choices and how those choices, in turn, sustain,
+        modify, or challenge international order.
       </p>
 
-    </section>
-
-
-
-    <!-- =======================
-         RESEARCH
-         ======================= -->
-
-    <section id="research">
-
-      <h2>Research</h2>
-
-      <h3>Research Interests</h3>
 
       <p>
-        International Relations; International Order; State Strategy;
-        International Cooperation and Conflict
+        I received my B.A. in Political Science and Diplomacy from
+        Myongji University and my M.A. in Political Science from
+        California State University, Fullerton, where I received
+        Graduate Academic Honors.
       </p>
 
 
-      <h3 style="margin-top:35px;">Master's Thesis</h3>
-
-      <p class="paper-title">
-        Why Some Revisionist States Build and Others Break:
-        Domestic Constraints, Time Horizons, and Strategic Choice
-        in China and Russia
-      </p>
-
-      <p class="paper-info">
-        M.A. Thesis, California State University, Fullerton, 2026.
-      </p>
-
-      <p class="buttons">
-
-        <a href="thesis.html">
-          Abstract
-        </a>
-
-        <a href="thesis.pdf" target="_blank">
-          PDF
-        </a>
-
-        <a href="https://doi.org/10.5281/zenodo.19543961"
-           target="_blank">
-          DOI
-        </a>
-
-      </p>
-
-    </section>
-
-
-
-    <!-- =======================
-         CV
-         ======================= -->
-
-    <section id="cv">
-
-      <h2>Curriculum Vitae</h2>
-
-      <p>
-        <a href="cv.pdf" target="_blank">
-          View CV (PDF)
-        </a>
-      </p>
-
-    </section>
-
-
-
-    <!-- =======================
-         CONTACT
-         이메일만 수정
-         ======================= -->
-
-    <section id="contact">
-
-      <h2>Contact</h2>
-
-      <p>
-        Department of International Affairs<br>
-        School of Public and International Affairs<br>
-        University of Georgia<br>
-        Athens, Georgia
-      </p>
-
-      <p>
-        Email:
-        <a href="mailto:jihwan.lee1@uga.edu">
-          jihwan.lee1@uga.edu
-        </a>
-      </p>
-
-    </section>
-
-
-  </main>
-
-
-
-  <footer>
-
-    <div class="container">
-      © 2026 Ji Hwan Lee
     </div>
 
-  </footer>
+
+  </div>
+
+
+</main>
+
+
+
+<footer>
+
+  <a href="mailto:jihwan.lee1@uga.edu">
+    jihwan.lee1@uga.edu
+  </a>
+
+</footer>
 
 
 </body>
+
 </html>
